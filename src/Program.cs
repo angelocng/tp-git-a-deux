@@ -14,5 +14,6 @@ nom = Console.ReadLine();
 
 Console.WriteLine("La personne s'appelle : " +  prenom + nom);
 
+Person myPerson = new Person(prenom,nom);
 
-Console.WriteLine("La personne s'appelle : " +  prenom + nom);
+Console.WriteLine("La personne s'appelle : " +  myPerson.Prenom + myPerson.Nom);

@@ -15,5 +15,8 @@ namespace src.ClassesMetier
             this.prenom = prenom;
             this.nom = nom;
         }
+
+        public string Prenom {get; private set;}
+        public string Nom {get; private set;}
     }
 }
