@@ -12,12 +12,13 @@ namespace src.ClassesMetier
     {
         private string prenom;
         private string nom;
-        public string Prenom { get { return prenom; } }
-        public string Nom { get { return nom; } }
         public Person(string prenom, string nom)
         {
-            this.prenom = prenom;
-            this.nom = nom;
+            this.Prenom = prenom;
+            this.Nom = nom;
         }
+
+        public string Prenom {get; private set;}
+        public string Nom {get; private set;}
     }
 }
