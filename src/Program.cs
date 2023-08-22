@@ -1,4 +1,7 @@
-﻿//
+
+Console.WriteLine("Programme Personne");
+
+//
 string? prenom;
 string? nom;
 
@@ -8,5 +11,8 @@ prenom = Console.ReadLine();
 
 Console.WriteLine("Saisir le nom : ");
 nom = Console.ReadLine();
+
+Console.WriteLine("La personne s'appelle : " +  prenom + nom);
+
 
 Console.WriteLine("La personne s'appelle : " +  prenom + nom);
