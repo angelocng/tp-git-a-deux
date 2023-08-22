@@ -8,3 +8,5 @@ prenom = Console.ReadLine();
 
 Console.WriteLine("Saisir le nom : ");
 nom = Console.ReadLine();
+
+Console.WriteLine("La personne s'appelle : " +  prenom + nom);
