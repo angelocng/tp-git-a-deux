@@ -1,1 +1,18 @@
-﻿Console.WriteLine("Programme Personne");
+
+Console.WriteLine("Programme Personne");
+
+//
+string? prenom;
+string? nom;
+
+Console.WriteLine("Programme de saisie d'un prénom et d'un nom d'une personne. ");
+Console.WriteLine("Saisir le prénom : ");
+prenom = Console.ReadLine();
+
+Console.WriteLine("Saisir le nom : ");
+nom = Console.ReadLine();
+
+Console.WriteLine("La personne s'appelle : " +  prenom + nom);
+
+
+Console.WriteLine("La personne s'appelle : " +  prenom + nom);
