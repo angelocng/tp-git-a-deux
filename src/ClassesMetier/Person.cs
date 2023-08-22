@@ -8,12 +8,10 @@ namespace src.ClassesMetier
 {
     internal class Person
     {
-        private string prenom;
-        private string nom;
         public Person(string prenom, string nom)
         {
-            this.prenom = prenom;
-            this.nom = nom;
+            this.Prenom = prenom;
+            this.Nom = nom;
         }
 
         public string Prenom {get; private set;}
