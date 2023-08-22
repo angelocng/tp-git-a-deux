@@ -26,5 +26,5 @@ while(Console.ReadLine() != "q")
 
     myPeopleContainer.AddPerson(myPerson);
 
-    Console.WriteLine("Pour arrêter la saisie de personnes, saisir q : ");
+    Console.WriteLine("Pour arrêter la saisie de personnes, saisir q sinon appuyer sur entrée : ");
 }
