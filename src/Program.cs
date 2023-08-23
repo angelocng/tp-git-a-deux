@@ -10,7 +10,14 @@ PeopleContainer myPeopleContainer = new PeopleContainer();
 
 Console.WriteLine("Programme de saisie d'un prénom et d'un nom d'une personne. Pour commencer, appuyer sur entrée. ");
 
-while(Console.ReadLine() != "q")
+myPerson = new Person("Joe", "Doe");
+myPeopleContainer.AddPerson(myPerson);
+myPerson = new Person("Jean", "Dupont");
+myPeopleContainer.AddPerson(myPerson);
+myPerson = new Person("Pierre", "Dupond");
+myPeopleContainer.AddPerson(myPerson);
+
+while (Console.ReadLine() != "q")
 {
     Console.WriteLine("Saisir le prénom : ");
     prenom = Console.ReadLine();
