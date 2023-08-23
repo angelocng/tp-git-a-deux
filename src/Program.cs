@@ -14,9 +14,21 @@ while(Console.ReadLine() != "q")
 {
     Console.WriteLine("Saisir le prénom : ");
     prenom = Console.ReadLine();
+    while (string.IsNullOrWhiteSpace(prenom.Trim()))
+    {
+        Console.WriteLine("Saisie invalide, veuillez recommencer la saisie du prénom : ");
+        prenom = Console.ReadLine();
+    }
+    prenom = prenom.Trim();
 
     Console.WriteLine("Saisir le nom : ");
     nom = Console.ReadLine();
+    while (string.IsNullOrWhiteSpace(nom.Trim()))
+    {
+        Console.WriteLine("Saisie invalide, veuillez recommencer la saisie du nom : ");
+        nom = Console.ReadLine();
+    }
+    nom = nom.Trim();
 
     Console.WriteLine("La personne s'appelle : " + prenom + " " + nom);
 
