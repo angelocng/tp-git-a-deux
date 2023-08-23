@@ -29,5 +29,7 @@ namespace src.ClassesMetier
             this.people.Sort(new ComparerNom());
             return this.people;
         }
+
+        public List<Person> People {get{return people;}}
     }
 }
