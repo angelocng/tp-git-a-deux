@@ -1,4 +1,5 @@
 using src.ClassesMetier;
+using System.Text.Json;
 
 Console.WriteLine("Programme Personne");
 
@@ -49,4 +50,11 @@ while (Console.ReadLine() != "q")
     }
 
     Console.WriteLine("Pour arrêter la saisie de personnes, saisir q sinon appuyer sur entrée : ");
+}
+
+Console.WriteLine("Vous avez la possibilité de sauvegarder la liste de personne en JSON\nSaisir y si vous êtes d'accord :");
+string? result = Console.ReadLine();
+if(result=="y")
+{
+    string jsonString = JsonSerializer.Serialize(myPeopleContainer.People);
 }
