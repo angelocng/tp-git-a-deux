@@ -24,7 +24,10 @@ while(Console.ReadLine() != "q")
 
     Console.WriteLine("La personne s'appelle : " +  myPerson.Prenom + " "+ myPerson.Nom);
 
-    myPeopleContainer.AddPerson(myPerson);
+    if(!myPeopleContainer.People.Exists(person=>person.Prenom==myPerson.Prenom&&person.Nom==myPerson.Nom))
+    {
+        myPeopleContainer.AddPerson(myPerson);
+    }
 
     Console.WriteLine("Pour arrêter la saisie de personnes, saisir q sinon appuyer sur entrée : ");
 }
