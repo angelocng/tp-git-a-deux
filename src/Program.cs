@@ -48,6 +48,10 @@ while (Console.ReadLine() != "q")
     {
         myPeopleContainer.AddPerson(myPerson);
     }
+    else
+    {
+        Console.WriteLine("Attention, ce couple de prénom et nom est déjà présent. ");
+    }
 
     Console.WriteLine("Pour arrêter la saisie de personnes, saisir q sinon appuyer sur entrée : ");
 }
