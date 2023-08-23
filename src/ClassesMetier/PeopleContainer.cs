@@ -30,6 +30,6 @@ namespace src.ClassesMetier
             return this.people;
         }
 
-        public List<Person> People {get{return people;}}
+        public List<Person> People { get { return people; } }
     }
 }
