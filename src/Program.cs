@@ -56,5 +56,7 @@ Console.WriteLine("Vous avez la possibilité de sauvegarder la liste de personne
 string? result = Console.ReadLine();
 if(result=="y")
 {
+    string fileName = "PeopleList.json";
     string jsonString = JsonSerializer.Serialize(myPeopleContainer.People);
+    File.WriteAllText(fileName, jsonString);
 }
